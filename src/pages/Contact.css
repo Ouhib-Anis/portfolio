@@ -1,0 +1,71 @@
+/* src/pages/Contact.css */
+.contact {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 10px; /* Arrondir les coins du conteneur */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajouter une ombre légère */
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333; /* Couleur du texte du titre */
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px; /* Limiter la largeur maximale du formulaire */
+  margin: 0 auto; /* Centrer le formulaire horizontalement */
+}
+
+.contact label {
+  font-size: 1rem; /* Taille de la police des labels */
+  font-weight: bold; /* Mettre le texte en gras */
+  color: #333; /* Couleur du texte des labels */
+  margin-top: 1rem; /* Espacement au-dessus des labels */
+  text-align: left; /* Alignement du texte à gauche */
+  width: 100%; /* Assurer que les labels utilisent toute la largeur disponible */
+  max-width: 500px; /* Limiter la largeur maximale des labels */
+}
+
+.contact input,
+.contact textarea {
+  width: 100%; /* Utiliser toute la largeur disponible */
+  max-width: 500px; /* Limiter la largeur maximale des champs */
+  margin: 0.5rem 0;
+  padding: 0.5rem; /* Augmenter l'espace intérieur */
+  font-size: 1rem;
+  border: 1px solid #ccc; /* Ajouter une bordure */
+  border-radius: 5px; /* Arrondir les coins des champs */
+  transition: border-color 0.3s ease; /* Effet de transition pour le focus */
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #007BFF; /* Couleur de la bordure au focus */
+  outline: none; /* Enlever le contour par défaut */
+}
+
+.contact button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #00050a; /* Couleur de fond du bouton */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Arrondir les coins du bouton */
+  margin-top: 1rem;
+  transition: background-color 0.3s ease; /* Effet de transition pour le survol */
+}
+
+.contact button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+.error-message {
+  color: #e74c3c; /* Couleur des messages d'erreur */
+  margin-top: 1rem;
+}
