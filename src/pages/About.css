@@ -1,16 +1,72 @@
 /* src/pages/About.css */
-.about {
-    text-align: center;
-    padding: 4rem;
-    background-color: #f9f9f9;
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center; /* Centre tout le texte à l'intérieur du div */
+}
+
+h2, h3, h4 {
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center; /* Centre les titres */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto 20px auto; /* Centre les listes */
+  text-align: left; /* Aligne le texte des listes à gauche pour une meilleure lisibilité */
+  display: inline-block; /* Combine avec text-align: center pour centrer l'ensemble de la liste */
+}
+
+li {
+  margin: 5px 0;
+  padding-left: 15px;
+  position: relative;
+  text-align: left; /* Aligne le texte des éléments de la liste à gauche */
+}
+
+li::before {
+  content: '•';
+  color: #007BFF;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ul li strong {
+  color: #007BFF;
+}
+
+div ul {
+  margin-bottom: 20px;
+}
+
+h4 {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #007BFF;
+  text-align: center; /* Centre les sous-titres */
+}
+
+@media (max-width: 600px) {
+  div {
+    padding: 15px;
+    margin: 10px;
   }
-  
-  .about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .about p {
-    font-size: 1.2rem;
-  }
-  
+}
