@@ -1,7 +1,7 @@
 {
   "name": "nom-du-projet",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "emailjs-com": "^3.2.0",
     "react": "^18.3.1",
@@ -39,5 +39,5 @@
   "devDependencies": {
     "gh-pages": "^6.1.1"
   },
-  "homepage": "http://Ouhib-Anis.github.io/portfolio"
+   "homepage": "https://Ouhib-Anis.github.io/portfolio"
 }
