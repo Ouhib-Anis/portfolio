@@ -1,10 +1,13 @@
-/* src/components/Footer.css */
 .footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 0.2rem 0;
+  padding: 0.2rem 1rem; /* Ajuste les espacements latéraux */
   position: fixed;
-  width: 100%;
+  width: 90%; /* Ajuste la largeur selon tes besoins */
+  max-width: 1200px; /* Limite la largeur maximale */
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centre le pied de page */
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
 }
