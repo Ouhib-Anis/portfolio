@@ -1,3 +1,5 @@
+/* app.css */
+
 .App {
   text-align: center;
 }
@@ -34,5 +36,43 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Media Queries */
+
+/* Pour les petits écrans (téléphones) */
+@media (max-width: 600px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+    padding: 20px;
+  }
+  
+  .App-logo {
+    height: 30vmin;
+  }
+}
+
+/* Pour les écrans moyens (tablettes) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .App-header {
+    font-size: calc(9px + 2vmin);
+    padding: 30px;
+  }
+
+  .App-logo {
+    height: 35vmin;
+  }
+}
+
+/* Pour les grands écrans (ordinateurs) */
+@media (min-width: 1025px) {
+  .App-header {
+    font-size: calc(10px + 2vmin);
+    padding: 40px;
+  }
+
+  .App-logo {
+    height: 40vmin;
   }
 }
